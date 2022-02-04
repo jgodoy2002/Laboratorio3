@@ -5,10 +5,33 @@
  */
 package Laboratorio3;
 
+import java.awt.Color;
+import java.util.ArrayList;
+
 /**
  *
  * @author jcgof
  */
-public class Mototaxis {
+public class Mototaxis extends Transportes{
+    protected int espacio;
+
+    public Mototaxis() {
+    }
+
+    public Mototaxis(String placa, Color color, ArrayList<Estaciones> estaciones) {
+        super(placa, color, estaciones);
+        this.espacio=2;
+    }
+
+    public int getEspacio() {
+        return espacio;
+    }
+
+    public void setEspacio(int espacio) {
+        this.espacio = espacio;
+    }
+    
+    
+    
     
 }

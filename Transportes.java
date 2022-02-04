@@ -4,16 +4,28 @@
  * and open the template in the editor.
  */
 package Laboratorio3;
+
 import java.awt.Color;
 import java.util.ArrayList;
+
 /**
  *
  * @author jcgof
  */
 public class Transportes {
+
     protected String placa;
     protected Color color;
     protected ArrayList<Estaciones> estaciones;
+
+    public Transportes() {
+    }
+
+    public Transportes(String placa, Color color, ArrayList<Estaciones> estaciones) {
+        this.placa = placa;
+        this.color = color;
+        this.estaciones = estaciones;
+    }
 
     public String getPlaca() {
         return placa;
@@ -43,12 +55,5 @@ public class Transportes {
     public String toString() {
         return "Transportes{" + "placa=" + placa + ", color=" + color + ", estaciones=" + estaciones + '}';
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
